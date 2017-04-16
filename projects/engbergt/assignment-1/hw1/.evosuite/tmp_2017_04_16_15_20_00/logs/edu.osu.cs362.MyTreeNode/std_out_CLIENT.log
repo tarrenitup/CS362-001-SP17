@@ -1,0 +1,79 @@
+* Starting client
+* Connecting to master process on port 19557
+* Analyzing classpath: 
+  - /Users/tarrenengberg/Documents/School/Spring_2017/CS362/Assignments/CS362-001-SP17/projects/engbergt/assignment-1/hw1/target/classes
+  - /Users/tarrenengberg/.m2/repository/junit/junit/4.12/junit-4.12.jar
+  - /Users/tarrenengberg/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class edu.osu.cs362.MyTreeNode
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 23
+  - Branch 10
+  - Exception 0
+  - MutationFactory 5
+  - Output 10
+  - Method 8
+  - MethodNoException 8
+  - CBranchFitnessFactory 10
+* Using seed 1492381202554
+* Starting evolution
+* Search finished after 66s and 1283 generations, 512284 statements, best individual has fitness: 3.3333333333333335
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 70%
+* Total number of goals: 10
+* Number of covered goals: 7
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Generated 8 tests with total length 26
+* Resulting test suite's coverage: 96% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 20%
+* Compiling and checking tests
+[MASTER] 15:21:14.114 [pool-2-thread-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.ClassCastException: java.lang.String cannot be cast to edu.osu.cs362.MyTreeNode
+[MASTER] 15:21:14.115 [pool-2-thread-1] WARN  JUnitAnalyzer - Failing test: MyTreeNode<Object> myTreeNode0 = new MyTreeNode<Object>((Object) "!N!C");
+MyTreeNode myTreeNode1 = (MyTreeNode)myTreeNode0.getData();
+assertEquals("!N!C", myTreeNode1);
+
+
+* Writing JUnit test case 'MyTreeNode_ESTest' to /Users/tarrenengberg/Documents/School/Spring_2017/CS362/Assignments/CS362-001-SP17/projects/engbergt/assignment-1/hw1/.evosuite/tmp_2017_04_16_15_20_00/tests
+* Done!
+
